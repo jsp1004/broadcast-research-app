@@ -60,6 +60,10 @@ export function SearchForm() {
     setIsLoadingPrograms(true);
     setProgramError(null);
     setProgramResult(null);
+    // 새로 검색하면 다른 탭에 남아있던 이전 결과는 지우고 이번 검색 결과만 보여준다.
+    setCastResult(null);
+    setCastError(null);
+    setCastCandidates(null);
 
     try {
       const response = await fetch("/api/research/programs", {
@@ -105,6 +109,9 @@ export function SearchForm() {
     setCastError(null);
     setCastResult(null);
     setCastCandidates(null);
+    // 새로 검색하면 다른 탭에 남아있던 이전 결과는 지우고 이번 검색 결과만 보여준다.
+    setProgramResult(null);
+    setProgramError(null);
 
     try {
       const response = await fetch("/api/research/cast/candidates", {
