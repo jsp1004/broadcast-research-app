@@ -1,0 +1,21 @@
+# vercel deploy(CLI)는 .gitignore가 아니라 이 파일을 기준으로 업로드 대상을 정하므로
+# .env 등 비밀 정보 파일이 배포 소스에 포함되지 않도록 별도로 명시한다.
+.env
+.env*
+.env*.local
+
+node_modules
+.next
+out
+build
+coverage
+
+.bkit
+trash-can
+
+.DS_Store
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
