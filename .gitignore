@@ -1,0 +1,42 @@
+# 의존성
+/node_modules
+.pnp
+.pnp.*
+
+# 테스트
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# 배포
+/build
+
+# 기타
+.DS_Store
+*.pem
+
+# 디버그 로그
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# 환경변수 (비밀 정보)
+.env
+.env*.local
+
+# vercel
+.vercel
+
+# supabase 로컬 캐시(프로젝트 연결 정보 등)
+supabase/.temp
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# bkit 내부 상태/감사 로그, 정리 대기 파일 (저장소 공개 대상 아님)
+.bkit/
+trash-can/
