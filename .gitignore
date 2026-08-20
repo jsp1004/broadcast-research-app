@@ -40,3 +40,6 @@ next-env.d.ts
 # bkit 내부 상태/감사 로그, 정리 대기 파일 (저장소 공개 대상 아님)
 .bkit/
 trash-can/
+
+.vercel
+.env*
